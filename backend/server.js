@@ -3,8 +3,8 @@ const app = express();
 const port = 3000;
 
 // Rota simples
-app.get('/api/mensagem', (req, res) => {
-  res.json({ texto: 'Olá do backend Node.js!' });
+app.get('/', (req, res) => {
+  res.send('Servidor Node.js funcionando! 🚀');
 });
 
 app.listen(port, () => {
