@@ -4,7 +4,7 @@ const port = 3000;
 
 // Rota simples
 app.get('/', (req, res) => {
-  res.send('Servidor Node.js funcionando! 🚀');
+  res.json({ texto: 'Olá do backend Node.js!' });
 });
 
 app.listen(port, () => {
